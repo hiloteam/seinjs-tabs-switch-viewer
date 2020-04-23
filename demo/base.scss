@@ -1,0 +1,47 @@
+/**
+ * @File   : base.scss
+ * @Author : dtysky(dtysky@outlook.com)
+ * @Date   : Wed Feb 26 2020
+ * @Description: Style.
+ */
+ html, body, #container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to top, #E10621, #621FA8);
+}
+
+.game {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tabs {
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  >div {
+    text-align: center;
+    width: 96px;
+    height: 56px;
+    line-height: 64px;
+    font-size: 20px;
+    background: rgba($color: #fff, $alpha: .5);
+    margin-right: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba($color: #fff, $alpha: 1);
+    }
+  }
+}
